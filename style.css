@@ -107,15 +107,19 @@ body {
 
 .navlink a {
     font-weight: bold;
+    color: black;
 }
 
 .navlink:hover {
-    color: #0050ff;
-    background-color: #badaee;
+    background-color: #0050ff;
     margin-left: 12px;
     margin-right: 12px;
+    cursor: pointer;
 }
 
+.navlink:hover a {
+    color: #fff;
+}
 
 .dp {
     height: 180px;
@@ -180,11 +184,11 @@ body {
     border-radius: 20px;
 }
 
-/* #telegram {
-    padding-left: 8px;
-    padding-right: 8px;
-    font-size: 48px;
-} */
+.name {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
 
 .lp-para {
     margin-left: 130px;
@@ -279,7 +283,6 @@ input:focus {
     height: 150px;
     background-repeat: no-repeat;
     border-radius: 4px 4px 0px 0px;
-    /* background-size: contain; */
     box-shadow: -8px 6px 16px -3px rgba(211, 211, 211, 0.5);
     -webkit-box-shadow: -8px 6px 16px -3px rgba(211, 211, 211, 0.5);
     -moz-box-shadow: -8px 6px 16px -3px rgba(211, 211, 211, 0.5);
@@ -297,30 +300,25 @@ input:focus {
 
 .cardeffect {
     margin: 0px 18px 0px 18px;
-    /* transform: translate(0px, 0px); */
     padding-bottom: 20px;
 }
 
 .face3 {
     overflow: hidden;
-    width: 500px;
-    height: 150px;
+    /* width: 300px; */
+    /* height: 500px; */
     background-repeat: no-repeat;
     border-radius: 4px 4px 0px 0px;
-    /* background-size: contain; */
-    box-shadow: -8px 6px 16px -3px rgba(211, 211, 211, 0.5);
-    -webkit-box-shadow: -8px 6px 16px -3px rgba(211, 211, 211, 0.5);
-    -moz-box-shadow: -8px 6px 16px -3px rgba(211, 211, 211, 0.5);
 }
 
 .face4 {
-    width: 500px;
-    height: 100px;
-    background-color: #badaee;
-    box-shadow: -8px 6px 16px -3px rgba(211, 211, 211, 0.5);
+    /* width: 300px;
+    height: 100px; */
+    /* background-color: #badaee; */
+    /* box-shadow: -8px 6px 16px -3px rgba(211, 211, 211, 0.5);
     -webkit-box-shadow: -8px 6px 16px -3px rgba(211, 211, 211, 0.5);
-    -moz-box-shadow: -8px 6px 16px -3px rgba(211, 211, 211, 0.5);
-    border-radius: 4px;
+    -moz-box-shadow: -8px 6px 16px -3px rgba(211, 211, 211, 0.5); */
+    /* border-radius: 4px; */
 }
 
 .p-8 {
@@ -338,13 +336,16 @@ input:focus {
 }
 
 .skillbox {
-    background-size: contain;
-    border-radius: 100%;
-    overflow: hidden;
-    width: 48px;
-    height: 48px;
+    /* background-size: contain; */
+    /* border-radius: 100%; */
+    /* overflow: hidden; */
+    /* width: 40px;
+    height: 40px; */
+    /* width: 55px; */
+    /* height: 55px; */
     margin: 0px 12px 0px 12px;
-    border-radius: 100%;
+    /* border-radius: 100%; */
+    /* background-color: rgb(225, 50, 50); */
 }
 
 .bottom {
@@ -406,23 +407,6 @@ input:focus {
     justify-content: center;
 }
 
-/* .fig-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
-
-/* .figcaption {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-} */
-
-/* .text {
-    flex-wrap: wrap;
-} */
-
 #skillrow1 {
     margin-top: 48px;
     margin-bottom: 52px;
@@ -437,12 +421,12 @@ input:focus {
     max-width: 700px;
 }
 
-.send {
+/* .send {
     margin-top: 24px;
     margin-bottom: 18px;
     font-size: small;
     margin-left: 32px;
-}
+} */
 
 #logo {
     max-width: 340px;
@@ -711,11 +695,12 @@ a:hover {
     }
 
     #closebt svg {
-        width: 0px;
+        /* width: 0px; */
         visibility: collapse;
     }
 
 }
+
 
 @media (max-width: 1024px) {
     #card {
@@ -776,6 +761,7 @@ a:hover {
     }
 
 }
+
 
 @media (max-width: 870px) {
     #card {
@@ -994,6 +980,10 @@ a:hover {
         margin-left: 0;
     }
 
+    .face3 {
+        text-align: center;
+    }
+
     #card-bottom {
         width: 340px;
     }
@@ -1037,6 +1027,7 @@ a:hover {
         margin-top: 21.5px;
     }
 }
+
 
 @media (max-width: 375px) {
     #card {
@@ -1100,7 +1091,9 @@ a:hover {
     .face1,
     .face2,
     .face3 {
+        width: 100vw;
         width: 300px;
+        /*  */
     }
 
     #card-bottom {
@@ -1169,11 +1162,15 @@ a:hover {
     }
 
     .face3 {
+        /*  */
         width: 100vw;
+        padding: 0 10px;
     }
 
     .face4 {
+        /*  */
         width: 100vw;
+        padding: 0 10px;
     }
 
     .gffix {
