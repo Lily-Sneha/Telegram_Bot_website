@@ -1,7 +1,11 @@
 body {
     margin: 0px;
     padding: 0px;
+}
 
+.robo-img img {
+    border-radius: 100%;
+    padding-left: 2px;
 }
 
 .flex-row {
@@ -42,7 +46,8 @@ body {
 }
 
 .nav {
-    justify-content: end;
+    /* justify-content: end; */
+    justify-content: space-between;
     z-index: 99;
     margin: 0px;
     height: 96px;
@@ -176,6 +181,7 @@ body {
 .px {
     padding-left: 8px;
     padding-right: 8px;
+    cursor: pointer;
 }
 
 #bot {
@@ -268,14 +274,6 @@ input:focus {
     box-shadow: inset 0px 0px 21px 0px #EAEAEA;
 }
 
-/* .hd2 {
-    background-image: url('./assets/bg.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 4px 8px 4px 8px;
-    border-radius: 4px;
-    text-align: center;
-} */
 
 .face1 {
     overflow: hidden;
@@ -320,6 +318,7 @@ input:focus {
     -moz-box-shadow: -8px 6px 16px -3px rgba(211, 211, 211, 0.5); */
     /* border-radius: 4px; */
 }
+
 
 .p-8 {
     padding: 8px;
@@ -421,12 +420,6 @@ input:focus {
     max-width: 700px;
 }
 
-/* .send {
-    margin-top: 24px;
-    margin-bottom: 18px;
-    font-size: small;
-    margin-left: 32px;
-} */
 
 #logo {
     max-width: 340px;
@@ -498,6 +491,8 @@ a:hover {
     margin-left: 24px;
     margin-top: 10px;
 }
+
+
 
 /* media query ************************ */
 @media (max-width: 1920px) {
@@ -874,11 +869,8 @@ a:hover {
         margin-left: 32px;
     }
 
-    /* .bgimg {
-        background-image: url("./assets/background.jpeg");
-    } */
-
 }
+
 
 @media (max-width: 640px) {
     body {
@@ -1000,14 +992,6 @@ a:hover {
         margin: 10px;
     }
 
-    .firstcard {
-        /* margin-left: 32px; */
-    }
-
-    .lastcard {
-        /* margin-right: 32px; */
-    }
-
     .gffix {
         margin-left: 16px;
         margin-right: 16px;
@@ -1119,14 +1103,6 @@ a:hover {
 
     #rect {
         margin: 10px;
-    }
-
-    .firstcard {
-        /* padding-left: 16px; */
-    }
-
-    .lastcard {
-        /* padding-right: 16px; */
     }
 
     .lp2fix {
